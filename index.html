@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,300,600,400,700&display=swap" rel="stylesheet">
+    <title>Portoflio</title>
+  </head>
+  <body>
+    <header class="header container">
+        <nav>
+          <ul class="header__menu">
+            <li ><a class="header__link" href="#about">About</a></li>
+            <li ><a class="header__link" href="#featured">Work</a></li>
+            <li ><a class="header__link" href="#contact">Contact</a></li>
+            <li class="header__line">
+            </li>
+            <li>
+              <button id="theme-toggle" class="header__sun">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                </svg>
+              </button>
+            </li>
+            <li >
+              <a  class="header__resume btn" href="#">Resume</a>
+            </li>
+          </ul>
+          <button class="header__bars">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+            </svg>
+            
+          </button>
+        </nav>
+    </header>
+    <!-- Mobile Navigaton -->
+    <div class="mobile-nav">
+      <nav>
+          <ul class="mobile-nav__menu">
+            <li><a href="#about" class="mobile-nav__link">About</a></li>
+            <li><a href="#featured" class="mobile-nav__link">Featured</a></li>
+            <li><a href="#contact" class="mobile-nav__link">Contact</a></li>
+            <li class="mobile-nav__link-line"></li>
+            <li>
+              <button id="theme-toggle" class="mobile-nav__sun">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                </svg>
+              </button>
+            </li>
+            <li><a href="#" class="mobie-nav__btn btn">Resume</a></li>
+          </ul>
+      </nav>
+    </div>
+    <!-- End of Mobiel Navagation -->
+    <main>
+        <section class="container hero">
+          <img class="hero__img" src="/hero.jpg" alt="Profile Picture">
+          <h2 class="hero__subtitle">Hi, I'm Ramzi 👋
+          </h2>
+          <h1 class="hero__title">FRONT-END<br>
+            WEB DEVELOPER.</h1>
+          <p class="hero__description">A passionate <strong>Frontend / Fullstack-Jamstack</strong> web developer and
+            <strong>UI/UX</strong> enthusiast specialized in building stunning pixel-perfect interactive websites/applications.</p>
+          <a class="hero__btn  btn" href="">Reach out</a>
+        </section>
+
+        <section id="about" class="about section container">
+          <div class="about__content">
+            <h2 class="about__title">About</h2>
+            <p class="about__description">Hello there! I'm Ramzi, a <strong>Frontend / Fullstack-Jamstack</strong> web developer based near Montreal. I wake up in the morning, grab a cup of timmies coffee, open up my laptop and build things that live on the web all day, everyday</p>
+            <p class="about__description">People who know me say I'm obsessed, that's fair, I am very driven and love learning new things.</p>
+            <p class="about__description">I recently created a YouTube channel called <a href="#">Slaying The Dragon</a> where I upload videos on front-end web development topics.</p>
+            <hr class="about__hr">
+            <h3 class="about__subtitle">Technologied</h3>
+            <div class="about__ul-container">
+              <ul class="about__ul">
+                <li class="about__list">JavaScript (Es6+)</li>
+                <li class="about__list">CSS</li>
+                <li class="about__list">hTML</li>
+              </ul>
+              <ul class="about__ul">
+                <li class="about__list">ReactJS</li>
+                <li class="about__list">NextJS</li>
+                <li class="about__list">TailWind CSS</li>
+              </ul>
+            </div>
+          </div>
+          <div class="about__img-wrapper">
+            <img class="about__img lazy loading" src="https://dummyimage.com/720x720/cdcbcd/b4b3b4.jpg" data-src="/about.jpg" alt="Profile Picture">
+          </div>
+        </section>
+        <section id="featured" class="featured container section">
+          <h3 class="featured__subtitle">Featured Project</h3>
+          <div class="featured__wrapper">
+            <h2 class="featured__title">
+              Slaying The Dragon
+            </h2>
+  
+            <a href="" class="featured__link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" d="M19.902 4.098a3.75 3.75 0 00-5.304 0l-4.5 4.5a3.75 3.75 0 001.035 6.037.75.75 0 01-.646 1.353 5.25 5.25 0 01-1.449-8.45l4.5-4.5a5.25 5.25 0 117.424 7.424l-1.757 1.757a.75.75 0 11-1.06-1.06l1.757-1.757a3.75 3.75 0 000-5.304zm-7.389 4.267a.75.75 0 011-.353 5.25 5.25 0 011.449 8.45l-4.5 4.5a5.25 5.25 0 11-7.424-7.424l1.757-1.757a.75.75 0 111.06 1.06l-1.757 1.757a3.75 3.75 0 105.304 5.304l4.5-4.5a3.75 3.75 0 00-1.035-6.037.75.75 0 01-.354-1z" clip-rule="evenodd" />
+              </svg>
+              
+            </a>
+          </div>
+          <p class="featured__description">
+            Cillum voluptate tempor cillum culpa cupidatat labore voluptate ullamco voluptate culpa sunt nulla non. Ad cupidatat dolore quis amet pariatur consectetur ullamco. Officia quis id velit duis cupidatat sunt deserunt do aliquip nulla laboris.
+          </p>
+          <div class="featured__info-container">
+            <div>
+              <h3 class="featured__label">
+                <ul class="featured__tech-stack">
+                  <li class="featured__info">TailWind CSS</li>
+                  <li class="featured__info">ReactJS</li>
+                  <li class="featured__info">React-fook-form</li>
+                  <li class="featured__info">Next.JS</li>
+                  <li class="featured__info">Axios</li>
+                  <li class="featured__info">Supabase</li>
+                  <li class="featured__info">Stripe</li>
+                </ul>
+              </h3>
+            </div>
+            <div>
+              <h3 class="featured__label">Project Type</h3>
+              <p class="featured__info">FullStack-JamStack</p>
+            </div>
+            <div>
+              <h3 class="featured__label">Time Line</h3>
+              <p class="featerud__info">December 2022 - Present</p>
+              </p>
+            </div>  
+          </div>
+          <div class="featured__img-container">
+            <div class="featured__img-wrapper"><img class="lazy loading" src="https://dummyimage.com/1920x968/cdcbcd/b4b3b4.jpg" data-src="/slayingthedragon.png" alt="slaying the Dragon hero"></div>
+            <div class="featured__img-wrapper"><img class="lazy loading" src="https://dummyimage.com/1920x968/cdcbcd/b4b3b4.jpg" data-src="/courses.png" alt="slaying the Dragon courses"></div>
+            <div class="featured__img-wrapper"><img class="lazy loading" src="https://dummyimage.com/1920x968/cdcbcd/b4b3b4.jpg" data-src="/pricing.png" alt="slaying the Dragon pricing"></div>
+            <div class="featured__img-wrapper"><img class="lazy loading" src="https://dummyimage.com/1920x968/cdcbcd/b4b3b4.jpg" data-src="/features.png" alt="slaying the Dragon features"></div>
+            <div class="featured__img-wrapper"><img class="lazy loading" src="https://dummyimage.com/1920x968/cdcbcd/b4b3b4.jpg" data-src="/faq.png" alt="slaying the Dragon faq"></div>
+            <div class="featured__img-wrapper"><img class="lazy loading" src="https://dummyimage.com/1920x968/cdcbcd/b4b3b4.jpg" data-src="/blog.png" alt="slaying the Dragon blog"></div>
+            <div class="featured__img-wrapper"><img class="lazy loading" src="https://dummyimage.com/1920x968/cdcbcd/b4b3b4.jpg" data-src="/signin.png" alt="slaying the Dragon sing-in"></div>
+            <div class="featured__img-wrapper"><img class="lazy loading" src="https://dummyimage.com/1920x968/cdcbcd/b4b3b4.jpg" data-src="/app.png" alt="slaying the Dragon app"></div>
+          </div>
+        </section>
+        <section class="work container section">
+          <h2 class="work__title">Projects</h2>
+          <p class="work__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos minima, porro dolorem cumque enim consequuntur. Nulla temporibus esse dolore earum magnam enim exercitationem amet necessitatibus impedit odio, nisi non corrupti repellendus, fugit libero? Veniam, dolor.
+          </p>
+          <div class="work__container">
+            <!-- Project 1 -->
+            <h3 class="work__project-title">Wax Motif</h3>
+            <div class="work__img-wrapper work__image1"><img class="lazy loading" src="https://dummyimage.com/900x900/cdcbcd/b4b3b4.jpg" data-src="/waxmoney.png" alt="Wax Motif website"></div>
+            <div class="work__project work__content1">
+              <h2 class="woek__project-subtitle">Wax Motif</h2>
+              <p class="work__project-description1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem laudantium debitis eos aspernatur repudiandae officia dicta quam consectetur, culpa vero voluptatibus placeat!</p>
+            
+              <p class="work__project-description2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci minus sint repellendus quis inventore. Odio magni quasi vitae nemo perferendis quibusdam consequatur corporis quis. Aspernatur distinctio dignissimos error nisi! Nam aperiam dicta neque nisi, facilis vero nobis maiores sunt culpa. Necessitatibus quam minima labore voluptas.
+              </p>
+              <a href="#" class="btn work__project-btn">Website</a>
+            </div>
+            <!-- Project 2 -->
+            <h3 class="work__project-title">Draze Force</h3>
+            <div class="work__img-wrapper work__image2"><img class="lazy loading" src="https://dummyimage.com/900x900/cdcbcd/b4b3b4.jpg" data-src="/drazeforce.png" alt="Wax Motif website"></div>
+            <div class="work__project work__content2">
+              <h2 class="woek__project-subtitle">Draze Force</h2>
+              <p class="work__project-description1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem laudantium debitis eos aspernatur repudiandae officia dicta quam consectetur, culpa vero voluptatibus placeat!</p>
+            
+              <p class="work__project-description2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci minus sint repellendus quis inventore. Odio magni quasi vitae nemo perferendis quibusdam consequatur corporis quis. Aspernatur distinctio dignissimos error nisi! Nam aperiam dicta neque nisi, facilis vero nobis maiores sunt culpa. Necessitatibus quam minima labore voluptas.
+              </p>
+              <a href="#" class="btn work__project-btn">Website</a>
+            </div>
+             <!-- Project 3 -->
+            <h3 class="work__project-title">Artren</h3>
+            <div class="work__img-wrapper  work__image3"><img class="lazy loading" src="https://dummyimage.com/900x900/cdcbcd/b4b3b4.jpg" data-src="/artren.png" alt="Artren website"></div>
+            <div class="work__project work__content3">
+              <h2 class="woek__project-subtitle">Artren</h2>
+              <p class="work__project-description1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem laudantium debitis eos aspernatur repudiandae officia dicta quam consectetur, culpa vero voluptatibus placeat!</p>
+            
+              <p class="work__project-description2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci minus sint repellendus quis inventore. Odio magni quasi vitae nemo perferendis quibusdam consequatur corporis quis. Aspernatur distinctio dignissimos error nisi! Nam aperiam dicta neque nisi, facilis vero nobis maiores sunt culpa. Necessitatibus quam minima labore voluptas.
+              </p>
+              <a href="#" class="btn work__project-btn">Website</a>
+            </div>
+            <!-- Project 4 -->
+            <h3 class="work__project-title">Platform Pro</h3>
+            <div class="work__img-wrapper  work__image4"><img class="lazy loading" src="https://dummyimage.com/900x900/cdcbcd/b4b3b4.jpg" data-src="/platformpro.png" alt="Platform Pro website"></div>
+            <div class="work__project work__content4">
+              <h2 class="woek__project-subtitle">Platform Pro</h2>
+              <p class="work__project-description1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem laudantium debitis eos aspernatur repudiandae officia dicta quam consectetur, culpa vero voluptatibus placeat!</p>
+            
+              <p class="work__project-description2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci minus sint repellendus quis inventore. Odio magni quasi vitae nemo perferendis quibusdam consequatur corporis quis. Aspernatur distinctio dignissimos error nisi! Nam aperiam dicta neque nisi, facilis vero nobis maiores sunt culpa. Necessitatibus quam minima labore voluptas.
+              </p>
+              <a href="#" class="btn work__project-btn">Website</a>
+            </div>
+            <!-- Project 5 -->
+            <h3 class="work__project-title">Wallys Vegan</h3>
+            <div class="work__img-wrapper work__image5"><img class="lazy loading" src="https://dummyimage.com/900x900/cdcbcd/b4b3b4.jpg" data-src="/wallysvegan.png" alt="Wallys Vegan website"></div>
+            <div class="work__project work__content5">
+              <h2 class="woek__project-subtitle">Wallys Vegan</h2>
+              <p class="work__project-description1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem laudantium debitis eos aspernatur repudiandae officia dicta quam consectetur, culpa vero voluptatibus placeat!</p>
+            
+              <p class="work__project-description2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci minus sint repellendus quis inventore. Odio magni quasi vitae nemo perferendis quibusdam consequatur corporis quis. Aspernatur distinctio dignissimos error nisi! Nam aperiam dicta neque nisi, facilis vero nobis maiores sunt culpa. Necessitatibus quam minima labore voluptas.
+              </p>
+              <a href="#" class="btn work__project-btn">Website</a>
+            </div>
+             <!-- Project 6 -->
+            <h3 class="work__project-title">Old Portoflio</h3>
+            <div class="work__img-wrapper work__image6"><img class="lazy loading" src="https://dummyimage.com/900x900/cdcbcd/b4b3b4.jpg" data-src="/portfolio.png" alt="portfolio website"></div>
+            <div class="work__project work__content6">
+              <h2 class="woek__project-subtitle"></h2>
+              <p class="work__project-description1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem laudantium debitis eos aspernatur repudiandae officia dicta quam consectetur, culpa vero voluptatibus placeat!</p>
+            
+              <p class="work__project-description2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci minus sint repellendus quis inventore. Odio magni quasi vitae nemo perferendis quibusdam consequatur corporis quis. Aspernatur distinctio dignissimos error nisi! Nam aperiam dicta neque nisi, facilis vero nobis maiores sunt culpa. Necessitatibus quam minima labore voluptas.
+              </p>
+              <a href="#" class="btn work__project-btn">Website</a>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="contact container section">
+          <h2 class="contact__title">Get In Contact</h2>
+          <p class="contact__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum laborum aliquid facere fugit quae, hic dolore dolores eum iure tenetur quo, autem nisi eveniet. Expedita accusamus voluptatum autem atque eveniet.</p>
+          <a href="mailto:slayingthedragon.io@gmail.com" target="_blank" class="contact__btn btn">Reach out</a>
+        </section>
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">~ Ramzi Bach ~</h3>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
