@@ -1,0 +1,7 @@
+{
+    "tabWidth": 4,
+    "endOfLine": "crlf",
+    "arrowParens": "avoid",
+    "printWidth": 120,
+    "singleQuote": true
+}
